@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".RequestGuide2">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter the character name you would want a guide for"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/requestChampText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Request" />
+
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="goSave"
+        android:text="Request" />
+
+    <Button
+        android:id="@+id/showButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="goShow"
+        android:text="Show" />
+
+    <Button
+        android:id="@+id/buttonCamera2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="goTakePhoto"
+        android:text="Camera" />
+
+    <ImageView
+        android:id="@+id/cameraImage"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_gravity="center"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="40sp"
+        android:layout_marginEnd="40sp"
+        android:layout_marginBottom="40sp"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+</LinearLayout>
